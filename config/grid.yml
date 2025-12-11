@@ -1,0 +1,90 @@
+columns:
+  - title: Analog Symbols
+    rows:
+      - title: Wire Symbols & Ground
+        height: 30
+        symbols:
+          - analog-ansi/core/wire
+          - analog-ansi/core/wire-connection
+          - analog-ansi/core/wire-contact
+          - analog-ansi/core/wire-crossing
+          - analog-ansi/core/ground-earth
+          - analog-ansi/core/ground-signal
+        legend:
+          - wire
+          - wire connection
+          - wire contact
+          - wire crossing
+          - ground (earth)
+          - ground (signal)
+      - title: Passives
+        height: 50
+        symbols:
+          - analog-ansi/core/resistor
+          - analog-ansi/core/resistor-adjustable
+          - analog-ansi/core/resistor-potentiometer
+          - analog-ansi/core/resistor-ldr
+          - analog-ansi/core/capacitor
+          - analog-ansi/core/capacitor-adjustable
+          - analog-ansi/core/capacitor-polarized
+          - analog-ansi/core/inductor
+          - analog-ansi/core/inductor-coupled
+          - analog-ansi/core/transformer
+          - analog-ansi/core/impedance
+          - analog-ansi/core/impedance-adjustable
+        legend:
+          - resistor
+          - resistor (adjustable)
+          - potentiometer
+          - resistor (light-dependent)
+          - capacitor
+          - capacitor (adjustable)
+          - capacitor (polarized)
+          - inductor
+          - inductor (coupled)
+          - impedance
+          - impedance (adjustable)
+      - title: Sources & Annotations
+        height: 50
+        symbols:
+          - analog-ansi/core/source-voltage
+          - analog-ansi/core/source-current
+          - analog-ansi/core/source-voltage-controlled
+          - analog-ansi/core/source-current-controlled
+          - analog-ansi/core/annotation-voltage
+          - analog-ansi/core/annotation-voltage-contact
+          - analog-ansi/core/annotation-current
+        legend:
+          - voltage source
+          - current source
+          - voltage source (controlled)
+          - current source (controlled)
+          - voltage annotation
+          - voltage annotation (at contact)
+          - current annotation
+      - title: Semiconductors
+        height: 50
+        symbols:
+          - analog-ansi/semiconductors/diode
+          - analog-ansi/semiconductors/diode-zener
+          - analog-ansi/semiconductors/diode-led
+          - analog-ansi/semiconductors/diode-photodiode
+        legend:
+          - diode
+          - zener diode
+          - light-emitting diode (LED)
+          - photodiode
+      - title: Amplifiers
+        height: 60
+        symbols:
+          - analog-ansi/semiconductors/opamp-single-output
+          - analog-ansi/semiconductors/opamp-diff-output
+        legend:
+          - opamp (single-ended output)
+          - opamp (differential output)
+      - title: Transducers
+        height: 50
+        symbols:
+          - analog-ansi/transducers/loudspeaker
+        legend:
+          - loudspeaker

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="20.147612"
+   height="40.699982"
+   viewBox="0 0 20.147612 40.699981"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="capacitor-adjustable.svg"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"><sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="22.804192"
+     inkscape:cx="4.6482682"
+     inkscape:cy="15.611165"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:snap-text-baseline="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:snap-center="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:lockguides="false"
+     inkscape:snap-smooth-nodes="true"
+     showguides="true"
+     inkscape:snap-midpoints="true"
+     inkscape:object-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-global="true"
+     inkscape:snap-others="true"
+     inkscape:snap-grids="true"
+     inkscape:pagecheckerboard="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:document-rotation="0"
+     inkscape:snap-nodes="true"
+     inkscape:snap-page="false"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1"><inkscape:grid
+       type="xygrid"
+       id="grid2536"
+       originx="-129.92619"
+       originy="-239.64999"
+       spacingy="1"
+       spacingx="1"
+       units="px"
+       visible="true" /></sodipodi:namedview><title
+     id="title56">Electric Components Library</title><defs
+     id="defs2" /><metadata
+     id="metadata5"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Electric Components Library</dc:title><dc:creator><cc:Agent><dc:title>Filip Dominec and contributors</dc:title></cc:Agent></dc:creator><dc:rights><cc:Agent><dc:title>Filip Dominec and contributors</dc:title></cc:Agent></dc:rights><cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" /><dc:description>A library of SVG symbols to be used in electric and electronic circuit diagrams in Wikimedia Projects.</dc:description><dc:contributor><cc:Agent><dc:title>Filip Dominec (https://commons.wikimedia.org/wiki/User:FDominec)
+Omegatron (https://commons.wikimedia.org/wiki/User:Omegatron)
+WvBraun (https://commons.wikimedia.org/wiki/User:WvBraun)
+Zedh (https://commons.wikimedia.org/wiki/User:Zedh)
+Rainglasz (see: Wikimedia Commons)
+Guruleninn (see: Wikimedia Commons)
+WarX (https://commons.wikimedia.org/wiki/User:WarX)
+Spuzzdawg~commonswiki (see: Wikimedia Commons)
+Sunspeanzler (https://commons.wikimedia.org/wiki/User:Sunspeanzler)
+Tlapicka (see: Wikimedia Commons)
+Xorx (https://commons.wikimedia.org/wiki/User:Xorx)
+Pemu (https://commons.wikimedia.org/wiki/User:Pemu)
+mpan (&lt;https://commons.wikimedia.org/wiki/User:Wikimpan&gt;; &lt;https://mpan.pl/&gt;)
+</dc:title></cc:Agent></dc:contributor></cc:Work><cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/"><cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /></cc:License></rdf:RDF></metadata><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-129.92618,227.93321)"><path
+       style="fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 132.99994,-200.58322 14,-14"
+       id="path1001" /><path
+       inkscape:connector-curvature="0"
+       id="path1002"
+       d="m 146.06659,-213.64984 -1.08479,-1.08476 4.83629,-2.66676 -2.66674,4.83628 -1.08476,-1.08476"
+       style="fill:#000001;fill-opacity:1;stroke:#000000;stroke-width:0.200896;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="ccccc" /><path
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 139.99994,-205.95458 v 18.37135"
+       id="path1005"
+       sodipodi:nodetypes="cc" /><path
+       sodipodi:nodetypes="cc"
+       id="path1006"
+       d="m 139.99999,-227.58321 -1e-4,18.27863"
+       style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" /><path
+       sodipodi:nodetypes="ccccccccccccccccc"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.563158;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 144.64336,-205.80535 c 0.099,-0.003 0.17609,-0.0691 0.17263,-0.14724 8e-5,-0.003 8e-5,-0.005 0,-0.008 v -0.69133 -0.0111 -0.003 c 0,-0.0772 -0.0827,-0.13855 -0.1805,-0.13856 v 0 h -0.0113 -9.25351 -8.1e-4 c -0.099,6.3e-4 -0.17872,0.0642 -0.17889,0.14229 v 0.71484 0.008 c 0.008,0.0752 0.0835,0.13426 0.17889,0.13487 h 9.27432 z"
+       id="path1007"
+       inkscape:connector-curvature="0" /><path
+       sodipodi:nodetypes="ccccccccccccccccc"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.563158;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 144.63619,-208.30535 c 0.099,-0.003 0.17609,-0.0691 0.17263,-0.14724 8e-5,-0.003 8e-5,-0.005 0,-0.008 v -0.69133 -0.0111 -0.003 c 0,-0.0772 -0.0827,-0.13855 -0.1805,-0.13856 v 0 h -0.0113 -9.25351 -8.1e-4 c -0.099,6.3e-4 -0.17872,0.0642 -0.17889,0.14229 v 0.71484 0.008 c 0.008,0.0752 0.0835,0.13426 0.17889,0.13487 h 9.27432 z"
+       id="path1008"
+       inkscape:connector-curvature="0" /></g></svg>

@@ -43,8 +43,9 @@ with open('./config/grid.yml', 'r', encoding='utf8') as f:
     grid = yaml.safe_load(f)
 
 # Background
-d = shapes.Drawing(canvas_size_h, canvas_size_v)
-d.add(shapes.Rect(0, 0, canvas_size_h, canvas_size_v, fillColor=colors.white))
+c = renderSVG.SVGCanvas(size=(canvas_size_h, canvas_size_v))
+# d = shapes.Drawing(canvas_size_h, canvas_size_v)
+# d.add(shapes.Rect(0, 0, canvas_size_h, canvas_size_v, fillColor=colors.white))
 
 add_debug_cursor(np.array([0,0]))
 
@@ -83,7 +84,8 @@ for col in grid['columns']:
 
             add_debug_cursor(csymi, color=colors.greenyellow)
             g.translate(*csymi)
-            d.add(g)
+            renderSVG.draw(g, c)
+            # d.add(g)
 
             csym += np.array([sym_width, 0])
             csym += np.array([sym_space, 0])
@@ -91,4 +93,17 @@ for col in grid['columns']:
         for ann in row['legend']:
             pass
 
-renderSVG.drawToFile(d, 'electrical-symbol-library-new.svg')
+c.save('../electrical-symbol-library-new.svg')
+
+# Turn top-level group into layer in Inkscape to avoid having to perform an ungroup operation when opening the output
+# file for the first time.
+with open('../electrical-symbol-library-new.svg', 'r+', encoding='utf8') as f:
+    lines = f.readlines()
+    for i in range(len(lines)):
+        if lines[i].find('<svg') > -1: # add inkscape XML namespace
+            lines[i] = lines[i].replace('>', ' xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">')
+        if lines[i].find('<g id="group"') > -1:
+            lines[i] = lines[i].replace('id="group"', 'inkscape:groupmode="layer" id="workspace"')
+            break
+    f.seek(0)
+    f.writelines(lines)

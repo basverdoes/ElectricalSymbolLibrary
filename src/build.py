@@ -1,6 +1,7 @@
 import pathlib
 import yaml
 import numpy as np
+from fontTools.ttLib.tables.T_S_I__0 import tsi0Format
 from svglib.svglib import svg2rlg
 from reportlab.graphics import shapes
 from reportlab.graphics import renderSVG
@@ -44,9 +45,6 @@ with open('./config/grid.yml', 'r', encoding='utf8') as f:
 
 # Background
 c = renderSVG.SVGCanvas(size=(canvas_size_h, canvas_size_v))
-# d = shapes.Drawing(canvas_size_h, canvas_size_v)
-# d.add(shapes.Rect(0, 0, canvas_size_h, canvas_size_v, fillColor=colors.white))
-
 add_debug_cursor(np.array([0,0]))
 
 # Add content
@@ -54,20 +52,20 @@ ccol = np.array([canvas_margin, canvas_size_v], dtype=float)
 add_debug_cursor(ccol, color=colors.blue)
 for col in grid['columns']:
 
-    # print title
+    # todo: print title
 
     crow = ccol + np.array([ann_size_h, 0])
     add_debug_cursor(crow, color=colors.aquamarine)
     for row in col['rows']:
         crow -= np.array([0, int(row['height'])])
 
-        # print title
+        # todo: print title
 
         csym = np.copy(crow)
         for sym in row['symbols']:
             path = pathlib.Path('./symbols') / (sym + '.svg')
 
-            g = svg2rlg(path).asGroup()
+            g = svg2rlg(path)
             add_debug_cursor(csym, color=colors.green)
 
             if g.width > 40:
@@ -78,14 +76,34 @@ for col in grid['columns']:
             else:
                 sym_width = 20
 
-            # align symbol in center of cell
+            # Align symbol in center of cell
             csymi = np.copy(csym) + np.array([(sym_width-g.width)/2,
                                               int(row['height']) / 2 - g.height / 2])
 
             add_debug_cursor(csymi, color=colors.greenyellow)
             g.translate(*csymi)
+
+            # Remove unnecessary groupings for each symbol
+            while True:
+                try:
+                    if len(g.contents) == 1:
+                        t0 = g.transform
+                        t1 = g.contents[0].transform
+                        g.transform = (
+                            t0[0] * t1[0] + t0[2] * t1[1],
+                            t0[1] * t1[0] + t0[3] * t1[1],
+                            t0[0] * t1[2] + t0[2] * t1[3],
+                            t0[1] * t1[2] + t0[3] * t1[3],
+                            t0[4] + (t1[3] * t1[4] - t1[2] * t1[5]) / (t1[0] * t1[3] - t1[1] * t1[2]),
+                            t0[5] - (t1[0] * t1[5] - t1[1] * t1[4]) / (t1[0] * t1[3] - t1[1] * t1[2])
+                        )
+                        g.contents = g.contents[0].contents
+                    else:
+                        break
+                except:
+                    break
+
             renderSVG.draw(g, c)
-            # d.add(g)
 
             csym += np.array([sym_width, 0])
             csym += np.array([sym_space, 0])

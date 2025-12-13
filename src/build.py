@@ -1,7 +1,6 @@
 import pathlib
 import yaml
 import numpy as np
-from fontTools.ttLib.tables.T_S_I__0 import tsi0Format
 from svglib.svglib import svg2rlg
 from reportlab.graphics import shapes
 from reportlab.graphics import renderSVG
@@ -14,11 +13,12 @@ CONSTANTS
 
 debug = False
 
-canvas_size_h = 400 # px
+canvas_size_h = 675 # px
 canvas_size_v = 300
 canvas_margin = 10
 
-ann_size_h = 60
+col_size   = 350
+ann_size_h = 20
 sym_space  = 2
 
 """
@@ -117,6 +117,8 @@ for col in grid['columns']:
 
         for ann in row['legend']:
             pass
+
+    ccol += np.array([col_size, 0])
 
 c.save('../electrical-symbol-library-new.svg')
 

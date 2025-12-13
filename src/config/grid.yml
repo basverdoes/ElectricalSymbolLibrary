@@ -1,12 +1,12 @@
 columns:
-  - title: Analog Symbols
+  - title: ANSI symbols
     rows:
       - title: Wire Symbols & Ground
         height: 30
         symbols:
           - analog-ansi/core/wire
           - analog-ansi/core/wire-connection
-          - analog-ansi/core/wire-contact
+          - analog-ansi/core/wire-terminal
           - analog-ansi/core/wire-crossing
           - analog-ansi/core/ground-earth
           - analog-ansi/core/ground-signal
@@ -29,6 +29,7 @@ columns:
           - analog-ansi/core/capacitor-polarized
           - analog-ansi/core/inductor
           - analog-ansi/core/inductor-coupled
+          - analog-ansi/core/inductor-with-core
           - analog-ansi/core/transformer
           - analog-ansi/core/impedance
           - analog-ansi/core/impedance-adjustable
@@ -51,6 +52,8 @@ columns:
           - analog-ansi/core/source-current
           - analog-ansi/core/source-voltage-controlled
           - analog-ansi/core/source-current-controlled
+          - analog-ansi/core/voltmeter
+          - analog-ansi/core/ammeter
           - analog-ansi/core/annotation-voltage
           - analog-ansi/core/annotation-voltage-contact
           - analog-ansi/core/annotation-current
@@ -59,6 +62,8 @@ columns:
           - current source
           - voltage source (controlled)
           - current source (controlled)
+          - voltmeter
+          - ammeter
           - voltage annotation
           - voltage annotation (at contact)
           - current annotation
@@ -86,5 +91,103 @@ columns:
         height: 50
         symbols:
           - analog-ansi/transducers/loudspeaker
+          - analog-ansi/transducers/piezo
         legend:
           - loudspeaker
+          - piezoelectric crystal
+  - title: IEC symbols
+    rows:
+      - title: Wire Symbols & Ground
+        height: 30
+        symbols:
+          - analog-iec/core/wire
+          - analog-iec/core/wire-connection
+          - analog-iec/core/wire-terminal
+          - analog-iec/core/wire-crossing
+          - analog-iec/core/ground-earth
+          - analog-iec/core/ground-signal
+        legend:
+          - wire
+          - wire connection
+          - wire contact
+          - wire crossing
+          - ground (earth)
+          - ground (signal)
+      - title: Passives
+        height: 50
+        symbols:
+          - analog-iec/core/resistor
+          - analog-iec/core/resistor-adjustable
+          - analog-iec/core/resistor-potentiometer
+          - analog-iec/core/resistor-ldr
+          - analog-iec/core/capacitor
+          - analog-iec/core/capacitor-adjustable
+          - analog-iec/core/capacitor-polarized
+          - analog-iec/core/inductor
+          - analog-iec/core/inductor-coupled
+          - analog-iec/core/inductor-with-core
+          - analog-iec/core/transformer
+#          - analog-iec/core/impedance
+#          - analog-iec/core/impedance-adjustable
+        legend:
+          - resistor
+          - resistor (adjustable)
+          - potentiometer
+          - resistor (light-dependent)
+          - capacitor
+          - capacitor (adjustable)
+          - capacitor (polarized)
+          - inductor
+          - inductor (coupled)
+#          - impedance
+#          - impedance (adjustable)
+      - title: Sources & Annotations
+        height: 50
+        symbols:
+          - analog-iec/core/source-voltage
+          - analog-iec/core/source-current
+          - analog-iec/core/source-voltage-controlled
+          - analog-iec/core/source-current-controlled
+          - analog-iec/core/voltmeter
+          - analog-iec/core/ammeter
+          - analog-iec/core/annotation-voltage
+          - analog-iec/core/annotation-voltage-contact
+          - analog-iec/core/annotation-current
+        legend:
+          - voltage source
+          - current source
+          - voltage source (controlled)
+          - current source (controlled)
+          - voltmeter
+          - ammeter
+          - voltage annotation
+          - voltage annotation (at contact)
+          - current annotation
+      - title: Semiconductors
+        height: 50
+        symbols:
+          - analog-iec/semiconductors/diode
+          - analog-iec/semiconductors/diode-zener
+          - analog-iec/semiconductors/diode-led
+          - analog-iec/semiconductors/diode-photodiode
+        legend:
+          - diode
+          - zener diode
+          - light-emitting diode (LED)
+          - photodiode
+      - title: Amplifiers
+        height: 60
+        symbols:
+          - analog-iec/semiconductors/opamp-single-output
+          - analog-iec/semiconductors/opamp-diff-output
+        legend:
+          - opamp (single-ended output)
+          - opamp (differential output)
+      - title: Transducers
+        height: 50
+        symbols:
+          - analog-iec/transducers/loudspeaker
+          - analog-iec/transducers/piezo
+        legend:
+          - loudspeaker
+          - piezoelectric crystal

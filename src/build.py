@@ -83,7 +83,7 @@ for col in grid['columns']:
             add_debug_cursor(csymi, color=colors.greenyellow)
             g.translate(*csymi)
 
-            # Remove unnecessary groupings for each symbol
+            # Remove unnecessary top-down groupings for each symbol
             while True:
                 try:
                     if len(g.contents) == 1:
@@ -102,6 +102,13 @@ for col in grid['columns']:
                         break
                 except:
                     break
+
+            # Remove unnecessary bottom groupings for each symbol
+            for i in reversed(range(len(g.contents))):
+                if type(g.contents[i]) == shapes.Group:
+                    if g.contents[i].transform == (1,0,0,1,0,0):
+                        g.contents += g.contents[i].contents
+                        g.contents.pop(i)
 
             renderSVG.draw(g, c)
 
